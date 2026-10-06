@@ -1,28 +1,36 @@
-# Polaris — Downloads
+# Polaris 下载
 
-Polaris 是原生 macOS Agent 任务面板，提供悬浮球、对话与任务管理，目前支持本机 Codex。
+Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务执行进度，目前适配本机 Codex。本仓库仅提供安装包与发行说明。
 
-[下载安装包](https://github.com/Arika1415/Polaris-Releases/releases)
+## 可下载版本
 
-## 当前预览版
+| 平台 | 当前状态 | 下载 |
+|---|---|---|
+| macOS · Apple Silicon（M 系列） | 1.10.32（72）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.10.32) |
+| macOS · Intel | 尚无已验收安装包 | 暂未发布 |
+| Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
-- 版本：1.10.32（72）
-- 架构：Apple Silicon（M 系列芯片），不支持 Intel Mac。
-- 构建目标：macOS 14.0 及以上；目前仅在开发机 macOS 26.5.2 验证，未完成各旧系统版本实机测试。
-- 需要另行安装并登录本机 Codex；不包含模型服务或订阅。
-- 下载 DMG，将 Polaris.app 拖入 Applications 后启动。
-- 已安装旧版的用户请使用程序内“更新与版本”选择 DMG 中的应用，以保留原安装路径。
+## Mac 安装
 
-## 分发状态
+1. 在上面的版本页面下载 `Polaris-1.10.32-72-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+2. 需要校验时，同时下载同名 `.sha256` 文件。
+3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
+4. 安装并登录本机 Codex。Polaris 安装包不包含模型服务或订阅。
 
-当前为预览测试包，使用 ad-hoc 本地签名，尚未完成 Apple Developer ID 签名及公证；下载后可能被 macOS Gatekeeper 拦截。不是 App Store 发行版。
+构建目标为 macOS 14.0 及以上；目前仅在开发机 macOS 26.5.2 验证，未完成所有旧系统实机测试。
 
-本仓库仅用于安装包与版本说明，不提供 Polaris 源码，也不授予开源许可。包内保留第三方运行资源及其许可证。安装包不含开发源码、测试文件、账号凭据或聊天历史。
+## 分发说明
 
-## 完整性校验
+当前为预览包，使用 ad-hoc 本地签名，尚未完成 Apple Developer ID 签名和公证，可能被 Gatekeeper 拦截；不是 App Store 发行版。
 
-每个 DMG 附有 `.sha256` 文件，将两者下载到同一目录后运行：
+发布安装包不等于开源。本仓库不提供 Polaris 源码或开源授权。包内保留必要的第三方运行资源和许可证，不包含开发源码、测试、账号凭据或聊天历史。
+
+## 校验下载文件
+
+将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
 shasum -a 256 -c Polaris-1.10.32-72-arm64-release.dmg.sha256
 ```
+
+更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
