@@ -1,4 +1,35 @@
-# Polaris 下载
+<p align="center">
+  <img src="assets/polaris-icon.png" width="72" height="72" alt="Polaris logo">
+</p>
+
+<h1 align="center">POLARIS</h1>
+
+<p align="center"><strong>A space for your agents.</strong></p>
+
+<p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
+
+<p align="center">
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.10.42/Polaris-1.10.42-82-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+</p>
+
+<p align="center">
+  <a href="#installation">Installation / 安装说明</a> ·
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases">Release notes</a>
+</p>
+
+<p align="center"><sub>Apple Silicon preview · Requires a configured local Codex or DeepSeek Harness.</sub></p>
+
+<p align="center">
+  <img src="assets/polaris-workspace.gif" width="1040" alt="Polaris native macOS workspace with project cards, the floating orb, and a smooth green Codex to blue DeepSeek Harness theme transition">
+</p>
+
+<p align="center"><sub>Native macOS UI with demo projects. Agent capabilities vary; see the release notes.</sub></p>
+
+<p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
+
+---
+
+## Polaris 下载
 
 Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务执行进度，目前适配本机 Codex 与 DeepSeek Harness。本仓库仅提供安装包与发行说明。
 
@@ -19,6 +50,8 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 继续支持 GitHub 在线更新：在 `… → 更新与版本…` 中检测新版，点击安装后自动下载、校验、替换并正常退出重启。保留发送键旁模型切换、滚动修复、中英文界面与原生输入框。支持按 Agent 品牌隔离模型和会话。
 
 **1.10.38 及更早版本需要先手动安装一次 1.10.39 或更新版本，之后才能使用应用内在线更新。** 更新无需 GitHub 账号或开发工具；运行中的任务仍有退出确认，取消重启后可稍后启用新版。
+
+<a id="installation"></a>
 
 ## Mac 安装
 
