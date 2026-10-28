@@ -9,7 +9,7 @@
 <p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
 
 <p align="center">
-  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.11.0/Polaris-1.11.0-85-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.11.1/Polaris-1.11.1-86-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
 </p>
 
 <p align="center">
@@ -27,9 +27,9 @@
 
 <p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
 
-**1.11.0 preview:** Codex and DeepSeek Harness can stay connected and run independent tasks. Editable handoffs retain their source and ask the receiving Agent to verify before the user confirms continuation. Uncertain delivery is never automatically resent.
+**1.11.1 preview:** Right-click projects to rename, add notes, archive, or restore. Handoffs now require an explicit project folder and review files; full source excerpts stay local. Handoff windows share Polaris’s green / blue theme. Two Agents can remain connected and run independently.
 
-**1.11.0 预览版：**两个 Agent 可同时连接、分别执行任务。可编辑接棒包保留来源，接收方先核对，再由用户确认继续；送达不明不会自动重发。跨项目仅移交说明和引用，不自动复制文件。
+**1.11.1 预览版：**右键项目即可改名、备注、归档与恢复。交接需明确选择项目目录及首轮核对文件，完整来源摘录留在本地；窗口沿用程序绿／蓝主题。继续支持双 Agent 同时连接、分别执行任务。归档不是文件备份，交接文件清单不是系统读取沙箱；旧混杂上下文需从来源创建新交接。
 
 ## Place it where you work
 
@@ -71,7 +71,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 | 平台 | 当前状态 | 下载 |
 |---|---|---|
-| macOS · Apple Silicon（M 系列） | 1.11.0（85）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.11.0) |
+| macOS · Apple Silicon（M 系列） | 1.11.1（86）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.11.1) |
 | macOS · Intel | 尚无已验收安装包 | 暂未发布 |
 | Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
@@ -89,7 +89,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 ## Mac 安装
 
-1. 在上面的版本页面下载 `Polaris-1.11.0-85-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+1. 在上面的版本页面下载 `Polaris-1.11.1-86-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
 2. 需要校验时，同时下载同名 `.sha256` 文件。
 3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
 4. 安装并配置本机 Codex 或 DeepSeek Harness。Polaris 安装包不包含模型服务或订阅。
@@ -107,7 +107,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.11.0-85-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.11.1-86-arm64-release.dmg.sha256
 ```
 
 更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
