@@ -9,7 +9,7 @@
 <p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
 
 <p align="center">
-  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.10.42/Polaris-1.10.42-82-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.10.43/Polaris-1.10.43-83-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
 </p>
 
 <p align="center">
@@ -67,11 +67,11 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 | 平台 | 当前状态 | 下载 |
 |---|---|---|
-| macOS · Apple Silicon（M 系列） | 1.10.42（82）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.10.42) |
+| macOS · Apple Silicon（M 系列） | 1.10.43（83）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.10.43) |
 | macOS · Intel | 尚无已验收安装包 | 暂未发布 |
 | Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
-本版修复 DSH 历史续问、维护工具安装路径，并新增 `… → 屏幕录制权限…` 入口。屏幕权限必须由用户在系统设置中允许；授权后若仍失败，请保存任务并正常退出重开。包仍为 ad-hoc 签名，无法保证更新后授权持续有效。
+本版修复多轮对话流式输出时的高度跳动与消息闪屏，保持已加载消息的稳定排版，保留原生输入框和按需加载历史。继续支持 DSH 历史续问、维护工具正确安装路径，以及 `… → 屏幕录制权限…` 入口。屏幕权限必须由用户在系统设置中允许；授权后若仍失败，请保存任务并正常退出重开。包仍为 ad-hoc 签名，无法保证更新后授权持续有效。
 
 继续为项目提供 DSH / Codex 归属标记，切换到 DeepSeek Harness 时以 0.6 秒过渡为蓝色主题，切回 Codex 恢复绿色。面板与悬浮球同步使用主色，保留原生输入框及原有动效节奏。
 
@@ -85,7 +85,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 ## Mac 安装
 
-1. 在上面的版本页面下载 `Polaris-1.10.42-82-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+1. 在上面的版本页面下载 `Polaris-1.10.43-83-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
 2. 需要校验时，同时下载同名 `.sha256` 文件。
 3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
 4. 安装并配置本机 Codex 或 DeepSeek Harness。Polaris 安装包不包含模型服务或订阅。
@@ -103,7 +103,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.10.42-82-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.10.43-83-arm64-release.dmg.sha256
 ```
 
 更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
