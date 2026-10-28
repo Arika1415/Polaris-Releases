@@ -27,6 +27,36 @@
 
 <p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
 
+## Place it where you work
+
+Drag the floating orb to a comfortable position. Release it to dock at a side or near the top center, with a subtle destination hint and a gentle settling motion. The close-up follows the orb so you can see the press, drag, and release.
+
+拖动悬浮球，放到顺手的位置；松开后自动吸附到边缘或顶部中央。镜头会跟随并拉近，展示拖动反馈与落点细节。
+
+<p align="center">
+  <img src="assets/polaris-drag.gif" width="1040" alt="Close-up of the native Polaris orb being picked up, dragged across the workspace, and released to dock at the right edge">
+</p>
+
+## Your workspace, one click away
+
+Click the orb to reveal your projects, conversations, and native input area. The camera moves closer to the input, then follows the panel back to the orb. Folding the panel keeps your running tasks going in the background.
+
+点击悬浮球展开工作空间，查看项目、继续会话、输入任务。动图拉近输入区，再展示收起动作；实际任务在面板收起后仍可继续运行。
+
+<p align="center">
+  <img src="assets/polaris-expand.gif" width="1040" alt="Polaris panel expands from the floating orb, the camera moves closer to the native input as a demo prompt is typed, and the panel folds back to the orb">
+</p>
+
+<p align="center"><sub>Native Polaris components with sample projects and choreographed gestures. Camera zoom is added for clarity.</sub></p>
+
+## A familiar flow for your agents
+
+- **Keep projects in view.** Browse your recent sessions and return to their working context. Records retain their Agent ownership.
+- **Follow the work.** See streamed replies, task progress, and tool activity as supported by the connected Agent. Stop a task when you need to take control.
+- **Choose your Agent and model.** Switch between Codex and DeepSeek Harness in the same workspace. Green and blue themes make the active Agent visible; the model picker shows that Agent's available models.
+
+项目记录、执行过程和 Agent 选择集中在同一个工作空间。不同 Agent 的功能范围有所区别，具体支持情况见下方版本说明。
+
 ---
 
 ## Polaris 下载
