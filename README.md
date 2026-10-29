@@ -9,7 +9,7 @@
 <p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
 
 <p align="center">
-  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.12.1/Polaris-1.12.1-88-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.13.0/Polaris-1.13.0-89-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
 </p>
 
 <p align="center">
@@ -27,13 +27,13 @@
 
 <p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
 
-**1.12.1 preview:** Confirm global rules once and add project-specific requirements. Messages retain the rule versions used. New default projects get separate folders; startup maintenance removes only recognized, expired update-download cache entries. Existing project files and native AGENTS.md remain unchanged.
+**1.13.0 preview:** Ask the source Agent to prepare a structured Markdown handoff in its original session. Review it, choose a new or existing project, and let the receiver verify the current state before continuing. Once takeover is confirmed and accepted, the source is archived with its destination recorded. Existing project history and earlier handoff links are preserved.
 
-**1.12.1 预览版：**统一管理全局原则和项目补充规则，消息可追溯发送时的版本。默认新项目分配独立文件夹，启动仅清理已识别的过期更新下载缓存。不会自动扫描磁盘归类文件、改写AGENTS，或删除归档和聊天历史。保留双Agent独立执行与明确目录接棒。
+**1.13.0 预览版：**准备接棒改为四步引导：当前Agent整理交接包 → 审阅 → 指定新建或已有项目 → 确认去向。接收方核对后由用户确认继续，送达后才归档来源并标记“已交接给哪个项目、哪个Agent”。已有项目保留名称、原生会话、历史和先前交接关联；失败或送达不明不自动重发，归档失败可单独重试。
 
-**1.12.1 路径更新：**程序数据统一使用 `~/Library/Application Support/Polaris/`，更新缓存使用 `~/Library/Caches/Polaris/UpdateDownloads/`。旧用户正常退出并启动新版后自动迁移；旧 `CodexTaskPanel` 路径仅保留为兼容链接，历史、归档、附件及已确认规则版本保留。两处独立数据并存或路径异常时停止并提示，不自动合并覆盖。新安装不创建旧名称目录。
+交接包由来源Agent生成，不再由程序固定摘录代替总结；只发送审阅后的Markdown和明确选择的文件引用，不复制文件或整段聊天历史。查看历史不会作废已整理的包；接管前检查来源空闲，避免两边同时执行。保留全局／项目规则管理、独立项目目录与安全缓存清理。DSH目前没有只读隔离，核对依赖其指令与本机权限配置，文件列表不是读取沙箱。
 
-**Path update:** Application data now lives in `~/Library/Application Support/Polaris/`, with update downloads in `~/Library/Caches/Polaris/UpdateDownloads/`. Upgrades move existing data and retain a compatibility link for old session paths. Independent conflicting folders are never merged or overwritten. New installations create only the Polaris data folder.
+**数据路径：** `~/Library/Application Support/Polaris/`；更新缓存为 `~/Library/Caches/Polaris/UpdateDownloads/`。旧用户正常退出并启动新版后自动迁移，旧 `CodexTaskPanel` 路径仅保留兼容链接。不会覆盖冲突目录、删除历史或归档文件。
 
 规则入口：主面板 `… → 规则管理…`；项目卡片右键“项目规则…”。只有明确确认保存的内容才会生效，后续发送和补充使用新版本，不重启任务。原生Agent有效规则继续适用；这不是文件读取沙箱或自动权限授予系统。
 
@@ -77,7 +77,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 | 平台 | 当前状态 | 下载 |
 |---|---|---|
-| macOS · Apple Silicon（M 系列） | 1.12.1（88）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.12.1) |
+| macOS · Apple Silicon（M 系列） | 1.13.0（89）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.13.0) |
 | macOS · Intel | 尚无已验收安装包 | 暂未发布 |
 | Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
@@ -95,7 +95,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 ## Mac 安装
 
-1. 在上面的版本页面下载 `Polaris-1.12.1-88-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+1. 在上面的版本页面下载 `Polaris-1.13.0-89-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
 2. 需要校验时，同时下载同名 `.sha256` 文件。
 3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
 4. 安装并配置本机 Codex 或 DeepSeek Harness。Polaris 安装包不包含模型服务或订阅。
@@ -113,7 +113,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.12.1-88-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.13.0-89-arm64-release.dmg.sha256
 ```
 
 更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
