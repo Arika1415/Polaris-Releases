@@ -9,7 +9,7 @@
 <p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
 
 <p align="center">
-  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.13.0/Polaris-1.13.0-89-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.14.0/Polaris-1.14.0-92-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
 </p>
 
 <p align="center">
@@ -27,11 +27,15 @@
 
 <p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
 
-**1.13.0 preview:** Ask the source Agent to prepare a structured Markdown handoff in its original session. Review it, choose a new or existing project, and let the receiver verify the current state before continuing. Once takeover is confirmed and accepted, the source is archived with its destination recorded. Existing project history and earlier handoff links are preserved.
+**1.14.0 preview:** Includes the previously unpublished 1.13.1 and 1.13.2 changes. Polaris assembles a bounded conversation transcript for an isolated, tool-free Agent summary. Handoff preparation continues in the background while its window can be moved, minimized or closed. Review the Markdown, select the receiving project, and confirm takeover after a live source-state check. Drag the orb to an outer screen edge, hold for about 1.2 seconds and release to collapse it into a small edge line; hover or click to restore it.
 
-**1.13.0 预览版：**准备接棒改为四步引导：当前Agent整理交接包 → 审阅 → 指定新建或已有项目 → 确认去向。接收方核对后由用户确认继续，送达后才归档来源并标记“已交接给哪个项目、哪个Agent”。已有项目保留名称、原生会话、历史和先前交接关联；失败或送达不明不自动重发，归档失败可单独重试。
+**1.14.0 预览版：**累计补齐此前未发布的三次更新：
 
-交接包由来源Agent生成，不再由程序固定摘录代替总结；只发送审阅后的Markdown和明确选择的文件引用，不复制文件或整段聊天历史。查看历史不会作废已整理的包；接管前检查来源空闲，避免两边同时执行。保留全局／项目规则管理、独立项目目录与安全缓存清理。DSH目前没有只读隔离，核对依赖其指令与本机权限配置，文件列表不是读取沙箱。
+- **文本交接与后台整理：**程序汇集有长度限制的对话文本，再交给独立、无工具的 Agent 请求总结，不恢复或改动来源原生会话。交接窗口可拖动、最小化或关闭，整理仍继续；返回对话后可再次打开审阅。
+- **接棒状态确认修复：**来源缓存状态未知时先查询原生状态；确认空闲后才允许继续归档。正在执行、检查失败或受保护的控制会话继续阻止归档；失败不自动重发任务。
+- **悬浮球边缘隐藏：**拖到屏幕外缘并停留约1.2秒，松手后变速形变为粗线；悬停约0.25秒或点击恢复悬浮球。经过边缘、沿边移动或离开会取消停留；支持四边并排除可通行的多屏接缝。
+
+保留四步审阅与指定新建／已有项目、来源关联、确认接管后归档和失败单独重试。交接总结只是对话整理，不代表已重新验证文件；接收方仍需核对现状。独立总结不使用工具，接收任务本身仍遵守原生 Agent 权限，文件引用不是读取沙箱。仅发送审阅后的交接包及明确选择的引用，不自动复制项目文件。全局／项目规则、独立项目目录与安全缓存清理继续保留。
 
 **数据路径：** `~/Library/Application Support/Polaris/`；更新缓存为 `~/Library/Caches/Polaris/UpdateDownloads/`。旧用户正常退出并启动新版后自动迁移，旧 `CodexTaskPanel` 路径仅保留兼容链接。不会覆盖冲突目录、删除历史或归档文件。
 
@@ -77,7 +81,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 | 平台 | 当前状态 | 下载 |
 |---|---|---|
-| macOS · Apple Silicon（M 系列） | 1.13.0（89）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.13.0) |
+| macOS · Apple Silicon（M 系列） | 1.14.0（92）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.14.0) |
 | macOS · Intel | 尚无已验收安装包 | 暂未发布 |
 | Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
@@ -95,7 +99,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 ## Mac 安装
 
-1. 在上面的版本页面下载 `Polaris-1.13.0-89-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+1. 在上面的版本页面下载 `Polaris-1.14.0-92-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
 2. 需要校验时，同时下载同名 `.sha256` 文件。
 3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
 4. 安装并配置本机 Codex 或 DeepSeek Harness。Polaris 安装包不包含模型服务或订阅。
@@ -113,7 +117,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.13.0-89-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.14.0-92-arm64-release.dmg.sha256
 ```
 
 更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
