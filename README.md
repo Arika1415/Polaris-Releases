@@ -9,7 +9,7 @@
 <p align="center">A native macOS workspace for Codex and DeepSeek Harness.</p>
 
 <p align="center">
-  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.14.0/Polaris-1.14.0-92-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
+  <a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.14.7/Polaris-1.14.7-99-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download for macOS — Apple Silicon preview"></a>
 </p>
 
 <p align="center">
@@ -27,13 +27,16 @@
 
 <p align="center"><strong>One-click access</strong> · <strong>Session management</strong> · <strong>Visible task progress</strong></p>
 
-**1.14.0 preview:** Includes the previously unpublished 1.13.1 and 1.13.2 changes. Polaris assembles a bounded conversation transcript for an isolated, tool-free Agent summary. Handoff preparation continues in the background while its window can be moved, minimized or closed. Review the Markdown, select the receiving project, and confirm takeover after a live source-state check. Drag the orb to an outer screen edge, hold for about 1.2 seconds and release to collapse it into a small edge line; hover or click to restore it.
+**1.14.7 preview:** Includes the previously unpublished 1.14.1–1.14.7 fixes and motion refinements. Orb edge detection uses the orb's available desktop boundary and native event coordinates. Hold at an outer edge for about 0.55 seconds; the thick strip border blinks when ready, then release to hide. Hover highlights and slightly enlarges the strip; click morphs it back into the orb, and a second click opens the workspace. Motion is shorter, continuous and interruptible. Hover no longer opens the orb automatically, and clicking to restore keeps it visible.
 
-**1.14.0 预览版：**累计补齐此前未发布的三次更新：
+**1.14.7 预览版：**累计同步此前未发布的贴边修复与交互调整：
 
-- **文本交接与后台整理：**程序汇集有长度限制的对话文本，再交给独立、无工具的 Agent 请求总结，不恢复或改动来源原生会话。交接窗口可拖动、最小化或关闭，整理仍继续；返回对话后可再次打开审阅。
-- **接棒状态确认修复：**来源缓存状态未知时先查询原生状态；确认空闲后才允许继续归档。正在执行、检查失败或受保护的控制会话继续阻止归档；失败不自动重发任务。
-- **悬浮球边缘隐藏：**拖到屏幕外缘并停留约1.2秒，松手后变速形变为粗线；悬停约0.25秒或点击恢复悬浮球。经过边缘、沿边移动或离开会取消停留；支持四边并排除可通行的多屏接缝。
+- **修复贴边无法触发：**按球体抵达桌面可用边界判断，兼顾菜单栏和Dock；按下、拖动、松手使用事件自身坐标，避免全局鼠标位置不同步。排除可通行的多屏接缝。
+- **渐进吸附与明确就绪：**靠近边缘时逐渐吸附，球体向接触侧靠拢。边缘停留约0.55秒后，粗线边框快速闪烁，表示“现在松手即可贴边”；无勾选或额外亮环，减少动态效果时常亮。
+- **悬停预览、点击恢复：**悬停仅高亮并轻微放大边条；点击后约0.24秒连续变形成悬浮球，首次点击不打开对话，第二次才展开。点击恢复后保持球态；旧的悬停自动唤醒和1秒闲置回收流程已移除。
+- **更利落的交互动效：**收起约0.26秒，支持从当前帧反向恢复；普通停靠及面板展开收起减少摆动、拖尾和重复缓动。
+
+此前的独立无工具文本总结、后台交接窗口和接棒状态确认修复继续保留。
 
 保留四步审阅与指定新建／已有项目、来源关联、确认接管后归档和失败单独重试。交接总结只是对话整理，不代表已重新验证文件；接收方仍需核对现状。独立总结不使用工具，接收任务本身仍遵守原生 Agent 权限，文件引用不是读取沙箱。仅发送审阅后的交接包及明确选择的引用，不自动复制项目文件。全局／项目规则、独立项目目录与安全缓存清理继续保留。
 
@@ -81,7 +84,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 | 平台 | 当前状态 | 下载 |
 |---|---|---|
-| macOS · Apple Silicon（M 系列） | 1.14.0（92）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.14.0) |
+| macOS · Apple Silicon（M 系列） | 1.14.7（99）预览版 | [版本说明与附件](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.14.7) |
 | macOS · Intel | 尚无已验收安装包 | 暂未发布 |
 | Windows | 开发中，尚未达到验收标准 | 暂未公开发布 |
 
@@ -99,7 +102,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 
 ## Mac 安装
 
-1. 在上面的版本页面下载 `Polaris-1.14.0-92-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
+1. 在上面的版本页面下载 `Polaris-1.14.7-99-arm64-release.dmg`；不要将 GitHub 自动生成的 Source code ZIP 当成安装包。
 2. 需要校验时，同时下载同名 `.sha256` 文件。
 3. 打开 DMG，将应用复制到自己的 Applications 目录。已有旧版时保留原安装位置；先保存任务并正常退出旧版，再替换该位置的应用。
 4. 安装并配置本机 Codex 或 DeepSeek Harness。Polaris 安装包不包含模型服务或订阅。
@@ -117,7 +120,7 @@ Polaris 是桌面 Agent 任务面板，提供悬浮球、会话管理及任务�
 将 DMG 和 `.sha256` 放到同一目录，在该目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.14.0-92-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.14.7-99-arm64-release.dmg.sha256
 ```
 
 更多历史版本见 [Releases](https://github.com/Arika1415/Polaris-Releases/releases)。
