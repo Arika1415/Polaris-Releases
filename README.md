@@ -23,7 +23,8 @@ Polaris 自身不向自有服务器上传聊天、项目或图片。通过 Agent
 
 ## Images, in context · 聊天图片
 
-<p align="center"><img src="assets/polaris-chat-images.gif?v=20261119-motion" width="1040" alt="Polaris 1.16.0 native sample chat thumbnail transitions to the enlarged image preview"></p>
+<p align="center"><img src="assets/polaris-chat-images.gif?v=20261119-motion50" width="1040" alt="Polaris 1.16.0 native sample chat thumbnail transitions to the enlarged image preview"></p>
+<p align="center"><a href="assets/polaris-chat-images.mp4">高画质视频 · 50fps MP4</a></p>
 
 动图从桌面悬浮球展开聊天，展示样例图片缩略图、打开原生预览、跟随镜头查看细节，再返回球体。缩略图保留在聊天中，点击后可放大查看；输入区支持拖入图片文件。Codex 支持的图片生成结果及图片历史可以显示，Agent 最终回复中的明确本地 Markdown 图片引用也会展示。
 
@@ -31,21 +32,24 @@ Polaris 自身不向自有服务器上传聊天、项目或图片。通过 Agent
 
 ## A handoff you can review · 可审阅的接棒
 
-<p align="center"><img src="assets/polaris-handoff-files.gif?v=20261119-motion" width="1040" alt="Native handoff interface showing the receiving Agent and the selected result-file checklist"></p>
+<p align="center"><img src="assets/polaris-handoff-files.gif?v=20261119-motion50" width="1040" alt="Native handoff interface showing the receiving Agent and the selected result-file checklist"></p>
+<p align="center"><a href="assets/polaris-handoff-files.mp4">高画质视频 · 50fps MP4</a></p>
 
 动图连续展示准备、审阅、选择接收方与文件、交付、核对和确认后归档，并放大文件清单。当前 Agent 使用程序整合的对话和文件元数据，整理可编辑的交接包。你可以选择新项目或已有项目接管，审阅哪些文件随成果交付。新项目使用独立目录，已有项目收到独立子目录，不覆盖原文件。
 
 复制文件不等于接管完成。接收方先核对，用户确认后程序再次校验成果，再继续工作、归档来源并保留来源关系。失败或送达不明时保留原项目，不自动重复发送。交接总结不是文件事实，归档也不是完整目录备份。
 
-<sub>四张动图均复用1.16.0原生UI与控制器连续录制，加入模拟桌面、编排指针和跟随镜头，不再用静态截图转场代替交互。Agent回复为固定样例；接棒复制、校验及确认后归档处理的是实际临时文件。它们不是生产项目或真实账号任务的录像，也不会录入你的桌面与聊天。见[演示来源](assets/README.md)。</sub>
+<sub>四张动图及配套视频以50fps输出，按模拟屏幕比例满幅制作，调整主体居中、镜头加减速与循环收束。均复用1.16.0原生UI与控制器连续录制，加入模拟桌面、编排指针和跟随镜头，不再用静态截图转场代替交互。Agent回复为固定样例；接棒复制、校验及确认后归档处理的是实际临时文件。它们不是生产项目或真实账号任务的录像，也不会录入你的桌面与聊天。见[演示来源](assets/README.md)。</sub>
 
 ## Stay within reach · 悬浮球交互
 
-<p align="center"><img src="assets/polaris-drag.gif?v=20261119-motion" width="1040" alt="Sample Polaris orb drag and docking interaction"></p>
+<p align="center"><img src="assets/polaris-drag.gif?v=20261119-motion50" width="1040" alt="Sample Polaris orb drag and docking interaction"></p>
+<p align="center"><a href="assets/polaris-drag.mp4">高画质视频 · 50fps MP4</a></p>
 
 拖动悬浮球放到顺手的位置。靠近可用屏幕边缘时逐渐吸附，停留约0.55秒，边条快速闪烁表示可以松手贴边。悬停只高亮并轻微放大边条，点击恢复为球体，再次点击展开面板。
 
-<p align="center"><img src="assets/polaris-expand.gif?v=20261119-motion" width="1040" alt="Sample Polaris panel expanding from and folding back into the orb"></p>
+<p align="center"><img src="assets/polaris-expand.gif?v=20261119-motion50" width="1040" alt="Sample Polaris panel expanding from and folding back into the orb"></p>
+<p align="center"><a href="assets/polaris-expand.mp4">高画质视频 · 50fps MP4</a></p>
 
 悬浮球交互动图使用样例工程和编排手势，镜头缩放便于看清操作；主要展示保留的展开、收起与拖动交互，1.16.0新增功能见上方动图。完整工程和真实任务不会被录入这些示例。
 
