@@ -2,9 +2,9 @@
 <h1 align="center">POLARIS</h1>
 <p align="center"><strong>A space for your agents.</strong></p>
 <p align="center">Codex 与 DeepSeek Harness 的原生 macOS 工作空间。</p>
-<p align="center"><a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.16.0/Polaris-1.16.0-101-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download Polaris 1.16.0 for macOS Apple Silicon"></a></p>
-<p align="center"><sub>1.16.0（101）预览版 · Apple Silicon · macOS 13.0+</sub></p>
-<p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">完整操作指南</a> · <a href="#quick-start">快速开始</a> · <a href="https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.16.0">本版下载与更新说明</a> · <a href="#compatibility">支持范围</a></p>
+<p align="center"><a href="https://github.com/Arika1415/Polaris-Releases/releases/download/v1.17.3/Polaris-1.17.3-106-arm64-release.dmg"><img src="assets/download-macos.svg" width="258" height="46" alt="Download Polaris 1.17.3 for macOS Apple Silicon"></a></p>
+<p align="center"><sub>1.17.3（106）预览版 · Apple Silicon · macOS 13.0+</sub></p>
+<p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">完整操作指南</a> · <a href="#quick-start">快速开始</a> · <a href="https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.17.3">本版下载与更新说明</a> · <a href="#compatibility">支持范围</a></p>
 
 Polaris brings your local agents, projects, conversations and handoffs into one native Mac workspace. Open it from the floating orb, follow the work, then fold it away while tasks continue.
 
@@ -12,6 +12,7 @@ Polaris brings your local agents, projects, conversations and handoffs into one 
 
 ## Why Polaris · 产品特色
 
+- **专注于当前项目。** 原生macOS全屏Space、纯黑阅读界面、轻字重与逐字渐入，保留历史、底部输入、模型选择和运行任务。原生全屏支持系统桌面切换；Polaris也可从程序坞正常退出。
 - **两个 Agent，各自工作。** Codex 与 DSH 保持独立连接，可分别执行任务；会话和模型按品牌隔离。绿色与蓝色主题让当前 Agent 清晰可辨。
 - **接棒带上成果。** 整理并审阅交接包，明确接收 Agent、项目和文件清单，复制并校验成果；接收方核对、用户确认后才继续并归档来源。
 - **图片留在上下文中。** 输入区与消息缩略图、点击放大、缩放与历史查看；支持的生成结果保存在本机，保持原生输入和聊天排版。
@@ -51,12 +52,12 @@ Polaris 自身不向自有服务器上传聊天、项目或图片。通过 Agent
 <p align="center"><img src="assets/polaris-expand.gif?v=20261119-motion50" width="1040" alt="Sample Polaris panel expanding from and folding back into the orb"></p>
 <p align="center"><a href="assets/polaris-expand.mp4">高画质视频 · 50fps MP4</a></p>
 
-悬浮球交互动图使用样例工程和编排手势，镜头缩放便于看清操作；主要展示保留的展开、收起与拖动交互，1.16.0新增功能见上方动图。完整工程和真实任务不会被录入这些示例。
+悬浮球交互动图使用样例工程和编排手势，镜头缩放便于看清操作；主要展示保留的展开、收起与拖动交互，聊天图片与成果接棒见上方动图；这些1.16.0素材尚未包含新专注模式。完整工程和真实任务不会被录入这些示例。
 
 <a id="quick-start"></a>
 ## Quick start · 快速开始
 
-1. 下载 [Polaris-1.16.0-101-arm64-release.dmg](https://github.com/Arika1415/Polaris-Releases/releases/download/v1.16.0/Polaris-1.16.0-101-arm64-release.dmg)，将应用复制到 Applications。不要把 Source code ZIP 当成安装包。
+1. 下载 [Polaris-1.17.3-106-arm64-release.dmg](https://github.com/Arika1415/Polaris-Releases/releases/download/v1.17.3/Polaris-1.17.3-106-arm64-release.dmg)，将应用复制到 Applications。不要把 Source code ZIP 当成安装包。
 2. 安装并配置你选择的本机 Codex 或 DeepSeek Harness，完成该 Agent 自己的登录或服务配置。
 3. 启动 Polaris，按首次部署引导检查环境、选择 Agent 并验证连接。
 4. 点击悬浮球展开面板，选择工作目录、输入任务并发送。已有项目可在项目卡片或“全部记录”中继续。
@@ -77,7 +78,7 @@ English: download the DMG, copy Polaris to Applications, configure a local Codex
 
 | 平台／能力 | 当前状态 |
 |---|---|
-| macOS · Apple Silicon（M系列） | **1.16.0（101）公开预览**，最低编译目标macOS 13.0；13.6.7实机待验收 |
+| macOS · Apple Silicon（M系列） | **1.17.3（106）公开预览**，最低编译目标macOS 13.0；13.6.7实机待验收 |
 | macOS · Intel | 尚无已验收安装包 |
 | Windows | 实验原型，尚未达到验收标准，不在本次公开包内 |
 | Codex | 本机检测、会话、流式回复、执行过程、停止、模型选择、支持的图片与附件 |
@@ -92,10 +93,10 @@ English: download the DMG, copy Polaris to Applications, configure a local Codex
 
 1.10.43及更早版本需手动安装新版一次；升级后可继续在线更新。下载公开包不需要GitHub账号。
 
-需要手动校验时，将DMG和[同名.sha256](https://github.com/Arika1415/Polaris-Releases/releases/download/v1.16.0/Polaris-1.16.0-101-arm64-release.dmg.sha256)放在同一目录执行：
+需要手动校验时，将DMG和[同名.sha256](https://github.com/Arika1415/Polaris-Releases/releases/download/v1.17.3/Polaris-1.17.3-106-arm64-release.dmg.sha256)放在同一目录执行：
 
 ```sh
-shasum -a 256 -c Polaris-1.16.0-101-arm64-release.dmg.sha256
+shasum -a 256 -c Polaris-1.17.3-106-arm64-release.dmg.sha256
 ```
 
-[本版发行说明](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.16.0) · [历史版本](https://github.com/Arika1415/Polaris-Releases/releases)
+[本版发行说明](https://github.com/Arika1415/Polaris-Releases/releases/tag/v1.17.3) · [历史版本](https://github.com/Arika1415/Polaris-Releases/releases)
